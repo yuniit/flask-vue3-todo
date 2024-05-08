@@ -1,18 +1,53 @@
-## Backend
+# Backend
 
-pip freeze > requirements.txt
+### Requirement
+
+- python >= 3.2
+
+### How to run
+
+```bash
+# inside folder flask-vue3-todo
+cd backend
+
+
+# open vs-code then open terminal (must use vs-code terminal)
+
+
+# In vs-code terminal, create an environment
+python3 -m venv .venv
+
+# Activate the environment
+. .venv/bin/activate
+
+# Install all dependencies
 pip install -r requirements.txt
 
-- python@3.2
-- flask
-- pymongo
-- flask_login
+# Start app
+flask run
 
-## Frontend
+# * Running on http://127.0.0.1:5000
+```
+___
 
-**Required node version >= 18**
-- Vue 3
-- Axios
+> Note: If error you may need to check [How to select Python interpreters
+](https://code.visualstudio.com/docs/python/environments#_working-with-python-interpreters)
 
+# Frontend
 
+### Requirement
 
+- node version >= 18
+
+```bash
+# inside folder flask-vue3-todo
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start app
+npm run dev
+
+# * Running on http://localhost:5173/
+```
